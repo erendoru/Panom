@@ -1,0 +1,61 @@
+.howcard {
+  height: 350px;
+  width: 320px;
+  position: absolute;
+  top: 100px;
+  right: 30px;
+  background-color: #f2f7f5;
+  overflow: hidden;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-sizing: border-box;
+  z-index: 2;
+
+  h1 {
+    color: #00473e;
+    font-size: 20px;
+    width: 25px;
+    margin-left: 35px;
+  }
+
+  ul li::before {
+    content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #faae2b; /* Change the color */
+    font-weight: bolder; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+  }
+  ul {
+    margin-top: -10px;
+    list-style: none;
+    font-size: 14px;
+    li {
+      margin-top: 5px;
+
+      .design-info {
+        display: flex;
+        align-items: center;
+        color: #777e7d;
+        font-size: 12px;
+      }
+    }
+  }
+
+  .btn-anladım {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    padding: 10px 12px;
+    background-color: #faae2b;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}

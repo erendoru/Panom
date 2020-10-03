@@ -1,0 +1,20 @@
+.button {
+  margin-left: 10px;
+  .mini-button {
+    background-color: #faae2b;
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    svg {
+      position: relative;
+      top: 0;
+    }
+  }
+}

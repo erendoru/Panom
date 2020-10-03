@@ -1,0 +1,41 @@
+.nav-profile {
+  width: 50px;
+  height: 50px;
+  background-color: #faae2b;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+
+  .menu-element:hover {
+    background-color: #013a32;
+    border-bottom-left-radius: 8px;
+  }
+
+  .dropdown {
+    position: absolute;
+    top: 59px;
+    height: 250px;
+    margin-left: -50px;
+    width: 150px;
+    background-color: #00473e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom-left-radius: 8px;
+    z-index: 3;
+
+    .menu-element {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #f2f7f5;
+
+      .icon-button {
+        margin-right: 15px;
+      }
+    }
+  }
+}
